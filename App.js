@@ -8,6 +8,12 @@ export default function App() {
     <View style={styles.container}>
       <TextInput onChangeText={(text) => onChangeText(text)} value={value} />
       <Text>{value == "" ? "Type Something" : value}</Text>
+      <Button
+        style={styles.button}
+        onPress={() => onChangeText("")}
+        title="Clear"
+        appearance="default"
+      />
     </View>
   );
 }
